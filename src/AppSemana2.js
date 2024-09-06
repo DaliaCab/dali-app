@@ -1,4 +1,5 @@
-import React from "react";
+
+//SEMANA 2
 import SimpleStudentCard from "./SimpleStudentCard";
 import StudentCard from "./StudentCard";
 
