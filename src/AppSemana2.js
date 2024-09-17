@@ -3,7 +3,7 @@
 import SimpleStudentCard from "./SimpleStudentCard";
 import StudentCard from "./StudentCard";
 
-function app(){
+function App(){
   return (
     <div>
       <SimpleStudentCard name="Dalia" name2="Nico"/>
@@ -11,4 +11,4 @@ function app(){
     </div>
   );
 }
-export default app;
+export default App;
