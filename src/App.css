@@ -1,38 +1,46 @@
-.App {
+.viewPage {
+  font-size: 50px; /* Tamaño de letra */
+  color: #333; /* Color del texto */
+  text-align: center; /* Centra el texto */
+  margin-top: 20px; /* Espacio superior */
+}
+.button {
+  background-color: #4cafa2; /* Verde */
+  border: none;
+  color: rgb(12, 12, 12);
+  padding: 15px 32px; /*Espacio interno del botón*/
   text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 15px 5px; /*Aquí modifico el espacio entre la margen superior e inferior y entre los botones(a los lados)*/
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* Agrega sombra, puse sombra fuerte de 0.3*/ 
+  transition: all 0.3s ease; /* Transición suave para todas las propiedades */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button:hover {
+  background-color: #22848b; /* Color más oscuro al pasar el cursor */
+  transform: scale(1.05); /* Aumenta el tamaño ligeramente */
+  animation: pulse 1.5s infinite; /* Inicia la animación de pulso al hacer hover */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.button:active {
+  transform: scale(0.95); /* Hace que el botón se reduzca al hacer clic */
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #4cafa2;
+  }
+  50% {
+    background-color: #ff6666;
+  }
+  100% {
+    background-color: #af4c4c;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* .button.pulse {
+  animation: pulse 1.5s infinite; /* Pulsa la animación en bucle */
