@@ -6,6 +6,9 @@ import Semana5 from "./AppSemana5";
 import Semana5d1 from "./AppSemana5-1";
 import Semana5d2 from "./AppSemana5-2"
 import Semana5d22 from "./AppSemana5-22"
+import Semana6 from "./AppSemana6"
+import Semana62 from "./AppSemana6-2"
+import Semana6d2 from "./AppSemana6d2"
 
 class App extends React.Component {
   constructor(props) {
@@ -29,6 +32,9 @@ class App extends React.Component {
         <button onClick={() => this.selectWeek(<Semana5d1/>)}>Semana5-1</button>
         <button onClick={() => this.selectWeek(<Semana5d2/>)}>Semana5-2</button>
         <button onClick={() => this.selectWeek(<Semana5d22/>)}>Semana5-22</button>
+        <button onClick={() => this.selectWeek(<Semana6/>)}>Semana6</button>
+        <button onClick={() => this.selectWeek(<Semana62/>)}>Semana6-2</button>
+        <button onClick={() => this.selectWeek(<Semana6d2/>)}>Semana6d2</button>
         <br/><br/> {/*2 saltos de línea*/}
         {this.state.viewPage}
       </div>

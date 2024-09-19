@@ -1,0 +1,61 @@
+.cardsContainer{
+    display:flex;
+    justify-content: center;
+    gap: 20px;  /*Espacio para que no queden pegados los contenedores*/
+
+}
+.container{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.card{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 16px;
+    width: 250px;
+    margin: 10px;
+    background-color: #f4f4f4;
+    text-align:center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Agrega sombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones para suavizar el efecto */
+}
+.card:hover {
+    background-color: #e0e0e0;  /*Cambiamos el color de fondo al hacer hover*/
+    transform: translateY(-10px); /* Mueve el contenedor hacia arriba al hacer hover */
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2); /* Cambia la sombra al hacer hover */
+}
+.profileImage{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid royalblue;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /*agrego un aumento de la imagen suave en 0.3 segundos*/
+    box-shadow: rgba(13, 68, 65, 0.4) 0px 5px,
+                rgba(38, 143, 134, 0.3) 0px 10px,
+                rgba(63, 190, 207, 0.2) 0px 15px,
+                rgba(46, 233, 240, 0.1) 0px 20px,
+                rgba(69, 232, 238, 0.05) 0px 25px; /*0px, lo que significa que la sombra no se desplaza horizontalmente, se desplaza verticalmente de 5px en 5px*/
+}
+.card:hover .profileImage{
+    transform: scale(1.1); /*aumenta el tamaño de la imagen al hacer hover*/
+}
+.userName{
+    font-size: 1.2rem;
+    margin: 10px;
+}
+.userRole{
+    color: #666;
+    font-size: 1.2rem;
+}
+.descripcion{
+    font-size: 0.8rem;
+    margin: 10px;
+    color: grey;
+}
+.h1{
+    text-align: center;
+    color: purple;
+}
