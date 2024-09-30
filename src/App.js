@@ -10,6 +10,8 @@ import Semana6 from "./AppSemana6"
 import Semana62 from "./AppSemana6-2"
 import Semana6d2 from "./AppSemana6d2"
 import Semana6d3 from "./AppSemana6d3"
+import Semana7 from "./AppSemana7"
+import Semana7d2 from "./AppSemana7d2"
 import "./App.css";
 
 
@@ -39,6 +41,9 @@ class App extends React.Component {
         <button className="button" onClick={() => this.selectWeek(<Semana62/>)}>Semana6-2</button>
         <button className="button" onClick={() => this.selectWeek(<Semana6d2/>)}>Semana6d2</button>
         <button className="button" onClick={() => this.selectWeek(<Semana6d3/>)}>AppSemana6d3</button>
+        <button className="button" onClick={() => this.selectWeek(<Semana6d3/>)}>AppSemana6d3</button>
+        <button className="button" onClick={() => this.selectWeek(<Semana7/>)}>AppSemana7</button>
+        <button className="button" onClick={() => this.selectWeek(<Semana7d2/>)}>AppSemana7d2</button>
         <br/><br/> {/*2 saltos de línea*/}
         <div className="viewPage"> 
           {this.state.viewPage}
